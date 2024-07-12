@@ -17,7 +17,8 @@
 
 1. Explain the differences between `let`, `var`, and `const` in JavaScript. Provide examples of when to use each one.
     **Answer:**
-    
+
+    let və const ES6 ilə gəlmiş variable declaration üsullarıdır. const sabit dəyər təyin etmək üçündür sonradan dəyişmək olmur. let yalnız içində olduğu scopelar daxilində istifadə oluna bilir. var isə təyin olunduğu yerdən asılı olmayaraq hər yerdə istifadə oluna bilir.
 
 1. Which of the following is NOT a primitive data type in JavaScript?
     - A) String
@@ -54,6 +55,9 @@
 1. Explain the differences between the `for`, `while`, and `do...while` loops in JavaScript. Provide examples of when to use each type of loop.
 
     **Answer:**
+
+    
+
 
 1. Which method would you use to extract a section of a string and return it as a new string without modifying the original string?
     - A) `slice()`
@@ -227,6 +231,15 @@
 
     **Answer:**
 
+    new keyword classdan instance almaq ucun istifade olunur. 
+    class Person {
+        constructor(name){
+            this.name = name
+        }
+    }
+
+    const person = new Person('Farid')
+
 
 1. How do you add a new method to an existing constructor's prototype?
     - A) `Constructor.prototype.newMethod = function() {};`
@@ -288,6 +301,21 @@
 1. Describe how class inheritance works in ES6. Provide an example that demonstrates creating a base class and a subclass that extends the base class, including the use of the `super` keyword.
 
     **Answer:**
+
+    super keywordu parent classin constructoruna access vermek ucun istifade olunur.
+
+    class Person {
+        consturctor(name){
+            this.name = name
+        }
+    }
+
+    class Employee extends Person {
+        constructor(name,position){
+            super(name);
+            this.position = position
+        }
+    }
 
 
 1. Which OOP principle is demonstrated by restricting access to certain parts of an object?
